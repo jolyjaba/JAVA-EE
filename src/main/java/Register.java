@@ -8,10 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/register")
 public class Register extends HttpServlet {
-    /**
-     *
-     */
-    private static final long serialVersionUID = 8848302561903441692L;
+    private static final long serialVersionUID = 1L;
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         getServletContext().getRequestDispatcher("/register.jsp").forward(req, resp);

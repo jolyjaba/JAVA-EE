@@ -27,12 +27,7 @@
                   value="${user.email}"
                 />
               </div>
-              <div
-                class="error__message"
-                style="color: red; max-width: 200px; overflow-wrap: break-word"
-              >
-                ${userNotExist}
-              </div>
+              <div class="error__message">${userNotExist}</div>
               <div class="sign__field sign__field--text">
                 <label for="password">Password:</label>
                 <input
@@ -43,12 +38,7 @@
                   value="${user.password}"
                 />
               </div>
-              <div
-                class="error__message"
-                style="color: red; max-width: 200px; overflow-wrap: break-word"
-              >
-                ${inCorrectPassword}
-              </div>
+              <div class="error__message">${inCorrectPassword}</div>
               <input type="submit" value="Submit" />
             </form>
           </div>

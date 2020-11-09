@@ -27,12 +27,7 @@
                   value="${mail}"
                 />
               </div>
-              <div
-                class="error__message"
-                style="color: red; max-width: 200px; overflow-wrap: break-word"
-              >
-                ${notValidEmail}
-              </div>
+              <div class="error__message">${notValidEmail}</div>
               <div class="sign__field sign__field--text">
                 <label for="password">Password:</label>
                 <input
@@ -43,12 +38,7 @@
                   value="${pass}"
                 />
               </div>
-              <div
-                class="error__message"
-                style="color: red; max-width: 200px; overflow-wrap: break-word"
-              >
-                ${notValidPassword}
-              </div>
+              <div class="error__message">${notValidPassword}</div>
               <div class="sign__field sign__field--text">
                 <label for="confirm__password">Confirm Password:</label>
                 <input
@@ -59,12 +49,7 @@
                   value="${confPass}"
                 />
               </div>
-              <div
-                class="error__message"
-                style="color: red; max-width: 200px; overflow-wrap: break-word"
-              >
-                ${notMatchConfirm}
-              </div>
+              <div class="error__message">${notMatchConfirm}</div>
               <div class="sign__field sign__field--text">
                 <label for="confirm__password">First Name:</label>
                 <input
@@ -75,12 +60,7 @@
                   value="${fN}"
                 />
               </div>
-              <div
-                class="error__message"
-                style="color: red; max-width: 200px; overflow-wrap: break-word"
-              >
-                ${notValidFirst}
-              </div>
+              <div class="error__message">${notValidFirst}</div>
               <div class="sign__field sign__field--text">
                 <label for="confirm__password">Last Name:</label>
                 <input
@@ -91,12 +71,7 @@
                   value="${lN}"
                 />
               </div>
-              <div
-                class="error__message"
-                style="color: red; max-width: 200px; overflow-wrap: break-word"
-              >
-                ${notValidLast}
-              </div>
+              <div class="error__message">${notValidLast}</div>
               <input type="submit" value="Submit" />
             </form>
           </div>

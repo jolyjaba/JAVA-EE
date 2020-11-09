@@ -93,7 +93,7 @@ input {
   margin: 10px;
 }
 
-.sign > .error_message {
+.error__message {
   color: red;
   max-width: 200px;
   overflow-wrap: break-word;

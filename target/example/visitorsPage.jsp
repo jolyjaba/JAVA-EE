@@ -26,12 +26,12 @@
           <div class="main__content">
             <div class="home-page">
               <p class="home-page__title">
-                ${user.firstName} ${user.lastName}'s Home Page
+                ${user} ${user}'s Home Page
               </p>
               <div class="post">
                 <div class="post__main">
                   <div class="post__info">
-                    <div class="post__owner">${user.firstName}</div>
+                    <div class="post__owner">${user}</div>
                     <div class="post__date">Posted on [Date, Time]</div>
                   </div>
                   <div class="post__content">
@@ -44,7 +44,9 @@
                       <button class="post__delete">X</button>
                       <div class="post__main">
                         <div class="post__info">
-                          <div class="post__owner">[User]</div>
+                          <div class="post__owner">
+                            ${user} ${user}
+                          </div>
                           <div class="post__date">
                             Commented on [Date, Time]
                           </div>

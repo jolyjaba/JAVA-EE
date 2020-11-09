@@ -66,4 +66,29 @@ public class UserDAO implements Connector {
         }
         return false;
     }
+
+    public static User selectOne(User user) {
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
+            try (Connection conn = DriverManager.getConnection(url, username, password)) {
+
+                String sql = "SELECT * FROM users WHERE user_email = ? AND user_password = ?";
+                try (PreparedStatement preparedStatement = conn.prepareStatement(sql)) {
+                    preparedStatement.setString(1, user.getEmail());
+                    preparedStatement.setString(2, user.getPassword());
+                    ResultSet resultSet = preparedStatement.executeQuery();
+                    if (resultSet.next()) {
+                        String userFirst = resultSet.getString(2);
+                        String userLast = resultSet.getString(3);
+                        String userEmail = resultSet.getString(4);
+                        String userPassword = resultSet.getString(5);
+                        return new User(userEmail, userPassword, userFirst, userLast);
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
+        return null;
+    }
 }
